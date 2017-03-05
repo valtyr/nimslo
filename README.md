@@ -1,4 +1,4 @@
-# Samstilltar myndavélar
+# iNimslo
 
 ## Uppsetning
 

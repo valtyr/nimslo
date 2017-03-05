@@ -12,6 +12,9 @@
 		13309D921E6B265A007F33C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13309D901E6B265A007F33C4 /* Main.storyboard */; };
 		13309D941E6B265A007F33C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13309D931E6B265A007F33C4 /* Assets.xcassets */; };
 		13309D971E6B265A007F33C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13309D951E6B265A007F33C4 /* LaunchScreen.storyboard */; };
+		13309D9F1E6B3299007F33C4 /* RequestMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13309D9E1E6B3299007F33C4 /* RequestMaster.swift */; };
+		13309DA11E6B428E007F33C4 /* shutter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13309DA01E6B428D007F33C4 /* shutter.wav */; };
+		5691CBD802D0C48B9ACCD812 /* Pods_egill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D73AF1D36EAD8D922C9CA8 /* Pods_egill.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		13309D931E6B265A007F33C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13309D961E6B265A007F33C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13309D981E6B265A007F33C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13309D9E1E6B3299007F33C4 /* RequestMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMaster.swift; sourceTree = "<group>"; };
+		13309DA01E6B428D007F33C4 /* shutter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shutter.wav; sourceTree = "<group>"; };
+		16D73AF1D36EAD8D922C9CA8 /* Pods_egill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_egill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DC7B76A58E5F32ECD72EA2 /* Pods-egill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-egill/Pods-egill.debug.xcconfig"; sourceTree = "<group>"; };
+		B856AE58791417FECD089001 /* Pods-egill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egill.release.xcconfig"; path = "Pods/Target Support Files/Pods-egill/Pods-egill.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691CBD802D0C48B9ACCD812 /* Pods_egill.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				13309D8B1E6B265A007F33C4 /* egill */,
 				13309D8A1E6B265A007F33C4 /* Products */,
+				C9B9E7AFEDB42E8FBC35CE81 /* Pods */,
+				707A4C9A2C1A5F6729C5FF58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,27 @@
 				13309D931E6B265A007F33C4 /* Assets.xcassets */,
 				13309D951E6B265A007F33C4 /* LaunchScreen.storyboard */,
 				13309D981E6B265A007F33C4 /* Info.plist */,
+				13309D9E1E6B3299007F33C4 /* RequestMaster.swift */,
+				13309DA01E6B428D007F33C4 /* shutter.wav */,
 			);
 			path = egill;
+			sourceTree = "<group>";
+		};
+		707A4C9A2C1A5F6729C5FF58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16D73AF1D36EAD8D922C9CA8 /* Pods_egill.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B9E7AFEDB42E8FBC35CE81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28DC7B76A58E5F32ECD72EA2 /* Pods-egill.debug.xcconfig */,
+				B856AE58791417FECD089001 /* Pods-egill.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13309D9B1E6B265A007F33C4 /* Build configuration list for PBXNativeTarget "egill" */;
 			buildPhases = (
+				79241C95BD0EB4F8B6F87218 /* [CP] Check Pods Manifest.lock */,
 				13309D851E6B265A007F33C4 /* Sources */,
 				13309D861E6B265A007F33C4 /* Frameworks */,
 				13309D871E6B265A007F33C4 /* Resources */,
+				EBD350E9427E351F89105215 /* [CP] Embed Pods Frameworks */,
+				6FED81E1404184F4AA313D76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +159,60 @@
 			files = (
 				13309D971E6B265A007F33C4 /* LaunchScreen.storyboard in Resources */,
 				13309D941E6B265A007F33C4 /* Assets.xcassets in Resources */,
+				13309DA11E6B428E007F33C4 /* shutter.wav in Resources */,
 				13309D921E6B265A007F33C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FED81E1404184F4AA313D76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-egill/Pods-egill-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79241C95BD0EB4F8B6F87218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD350E9427E351F89105215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-egill/Pods-egill-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13309D851E6B265A007F33C4 /* Sources */ = {
@@ -138,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13309D8F1E6B265A007F33C4 /* ViewController.swift in Sources */,
+				13309D9F1E6B3299007F33C4 /* RequestMaster.swift in Sources */,
 				13309D8D1E6B265A007F33C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +342,7 @@
 		};
 		13309D9C1E6B265A007F33C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DC7B76A58E5F32ECD72EA2 /* Pods-egill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L5TEPZ8S7Z;
@@ -272,6 +356,7 @@
 		};
 		13309D9D1E6B265A007F33C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B856AE58791417FECD089001 /* Pods-egill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L5TEPZ8S7Z;
@@ -302,6 +387,7 @@
 				13309D9D1E6B265A007F33C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
